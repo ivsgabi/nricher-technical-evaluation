@@ -31,16 +31,17 @@ def extract_infos(array, input_str):
             article_found = True
             article_name = row[1]
 
-            if any(color in article_name for color in detect_colors(article_name)):
-                for color in detect_colors(article_name):
-                    if color not in printed_coloris:
-                        printed_coloris.add(color)
-                        coloris_status = True
-                        print("Coloris:", color)
-
             i = 0
             while i < len(value_str):
                 article_name = row[1]
+
+                if any(color in article_name for color in detect_colors(article_name)):
+                    for color in detect_colors(article_name):
+                        if color not in printed_coloris:
+                            printed_coloris.add(color)
+                            coloris_status = True
+                            print("Nom complet article:", article_name)
+                            print("Coloris:", color)
 
                 dimensions_match = re.search(r'\b(\d+[a-zA-Z]?(?:\s*[x*]\s*\d+[a-zA-Z]?)+)\b', value)
                 if dimensions_match:
@@ -127,8 +128,9 @@ def main():
         if extract_infos(array, input_str) == 0:
             print("Article not found.")
             return 84
-    print("Done!")
-    return (0)
+        if input == "q":
+            return 0
+    return 0
 
 if __name__ == '__main__':
     main()
