@@ -14,7 +14,7 @@ def has_numbers(str):
     return any(char.isdigit() for char in str)
 
 def detect_colors(string):
-    color_pattern = r'\b(black|noir|noire|noires|white|blanc|blanche|blanches|rouge|rouges|bleu|blue|bleus|vert|verts|verte|vertes|jaune|jaunes|orange|violet|violette|rose|roses|marron|gris|anthracite|taupe|beige)\b'
+    color_pattern = r'\b(black|noir|noire|noires|white|blanc|blanche|blanches|rouge|rouges|bleu|blue|bleus|vert|verts|verte|vertes|jaune|jaunes|orange|violet|violette|rose|roses|marron|gris|anthracite|taupe|beige|brun)\b'
     colors = re.findall(color_pattern, string, flags=re.IGNORECASE)
     return colors
 
