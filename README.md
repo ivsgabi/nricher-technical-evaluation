@@ -1,9 +1,9 @@
-# nricher_entrytest
-Nricher Intership entrytest -> dataviz and python code
+# nricher-technical-evaluation
+Nricher Intership Technical Entry Test -> Data Analysis & Python Code + Data Visualisation (PowerBI)
 
-Un outil de dashboarding est conseillé pour la présentation
+Un outil de dashboarding est conseillé pour la présentation.
 
-Introduction sur le fichier
+Concernant les fichiers:
 Fichier contenant les lignes de ventes d’un site de e-commerce (marketplace) dans l’ameublement.
 Principe d’une marketplace : le site vend les produits de différents vendeurs tiers (colonne C)
 Les produits vendus sont regroupés par nature et par univers (l’univers est le niveau 1 c’est-à-dire le plus macro, la nature le niveau 2)
@@ -25,4 +25,3 @@ Les produits vendus sont regroupés par nature et par univers (l’univers est l
 • Créer une vue d’analyse d’évolution des ventes et prix spécifique pour les matelas
 
 • Question ouverte : Quels facteurs peuvent influencer le volume et l’évolution des ventes sur l’ensemble des matelas, ou sur quelques produits en particulier ? Proposer des analyses et/ou graphes permettant de répondre à cette question
-
